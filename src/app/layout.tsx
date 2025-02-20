@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Geist, Azeret_Mono as Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/landing/navbar/Navbar";
 import MainNav from "@/components/main-nav";
 
 const geistSans = Geist({

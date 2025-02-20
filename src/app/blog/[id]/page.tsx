@@ -9,8 +9,10 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
     notFound() // Redirects to Next.js 404 page
   }
 
+  console.log("Image URL:", post.imageUrl);
+
   return (
-    <main className="min-h-screen bg-sky-100">
+    <main className="min-h-screen bg-whitepy-16 px-4 bg-gradient-to-b from-blue-50 to-blue-200">
       <article className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-sky-800 mb-4">{post.title}</h1>
 
@@ -19,7 +21,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
           alt={post.title}
           width={800}
           height={400}
-          className="w-full h-64 object-cover rounded-lg mb-6"
+          className="w-80% h-64 object-cover rounded-lg mb-6"
           priority
         />
 

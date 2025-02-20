@@ -15,7 +15,7 @@ const blogPosts: BlogPost[] = [
     id: "1",
     title: "Empowering Specially Abled Children Through Art",
     excerpt: "Discover how Umeed Kiran is using art therapy to help children express themselves and develop new skills.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    imageUrl: "images/blog1.jpg",
     content: (
       <>
         <p>
@@ -42,7 +42,7 @@ const blogPosts: BlogPost[] = [
     title: "Inclusive Education: A Cornerstone of Umeed Kiran",
     excerpt:
       "Learn about our approach to inclusive education and how it's making a difference in the lives of specially abled children.",
-    imageUrl:  "images/blog2.jpg",
+    imageUrl: "images/blog2.jpeg",
     content: (
       <>
         <p>
@@ -68,8 +68,8 @@ const blogPosts: BlogPost[] = [
     id: "3",
     title: "Physical Therapy: Enhancing Mobility and Independence",
     excerpt:
-      "Explore how our physical therapy programs are helping children overcome physical challenges and gain independence.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+      "Explore how our physical therapy programs are helping children overcome physical challenges and gain Confidence.",
+    imageUrl: "images/blog3.jpg",
     content: (
       <>
         <p>
@@ -91,6 +91,74 @@ const blogPosts: BlogPost[] = [
       </>
     ),
   },
+
+  {
+    id: "4",
+    title: "Physiotherapy & Speech Therapy: Enhancing Mobility & Communication",
+    excerpt: "For many specially abled children, the ability to move freely and communicate effectively does not come naturally",
+    imageUrl: "images/blog4.jpg",
+    content: (
+      <>
+        <p>
+          Physiotherapy plays a crucial role in helping children with disabilities gain control over their movements. At Umeed Kiran, trained therapists use specialized exercises and equipment to strengthen muscles, improve coordination, and enhance mobility. Activities such as stretching, balance training, and assisted walking are tailored to each child's specific needs.
+        </p>
+        <p>
+          One inspiring example is a young girl who had trouble walking independently due to a neurological condition. After months of physiotherapy, she not only gained the strength to walk but also became confident enough to participate in school activities.
+        </p>
+        <p>
+          Physiotherapy and speech therapy are essential components of rehabilitation for specially-abled children. Umeed Kiran remains dedicated to providing these life-changing therapies, helping children break barriers and achieve milestones that once seemed impossible. The organization encourages parents, caregivers, and society at large to recognize the importance of these therapies and support initiatives that make them accessible to all children in need.
+
+
+        </p>
+      </>
+    ),
+
+
+
+  },
+
+  {
+    id: "5",
+    title: "Art & Music Therapy: A Creative Path to Healing",
+    excerpt: "Art and music have long been celebrated for their therapeutic properties, offering a powerful means of communication and self-expression",
+    imageUrl: "images/blog5.jpg",
+    content: (
+      <>
+        <p>
+          Art therapy provides children with disabilities an opportunity to express their emotions and thoughts in a non-verbal and stress-free environment. Through painting, sculpting, and crafting, children develop fine motor skills, hand-eye coordination, and sensory integration. At Umeed Kiran, professional therapists guide children through structured activities, ensuring they benefit both psychologically and physically from each session. Art therapy has been shown to reduce anxiety, improve focus, and boost self-esteem in children who struggle with social interactions.        </p>
+        <p>
+          Parents and teachers have witnessed remarkable changes in children who participate in art and music therapy. One such example is a young boy at Umeed Kiran who had difficulty expressing himself verbally but discovered a love for painting.        </p>
+        <p>
+          Art and music therapy are more than just recreational activities; they are transformative tools that empower specially-abled children to express, learn, and grow. Umeed Kiran remains committed to expanding these programs, ensuring that every child has access to creative therapies that enhance their quality of life. The organization invites the community to support these initiatives, whether through donations, volunteering, or simply appreciating the talents of these children.
+
+        </p>
+      </>
+    ),
+  },
+
+  {
+    id: "6",
+    title: "The Journey of Umeed Kiran: A Decade of Empowerment",
+    excerpt: "For the past ten years, Umeed Kiran has been a beacon of hope for specially-abled children, providing them with the tools, resources, and care necessary for their growth and development",
+    imageUrl: "images/blog6.jpg",
+    content: (
+      <>
+        <p>
+          Founded in 2014 by Archana Srivastava, Umeed Kiran has transformed into a well-established rehabilitation center, offering a wide range of therapies and programs aimed at holistic development. The journey, however, has not been without its challenges. From raising awareness about disabilities to ensuring quality education and therapy, the organization has continuously worked towards a society that embraces inclusion and equal opportunities.        </p>
+        <p>
+          The journey of Umeed Kiran began with a simple but profound vision: to create a safe and nurturing space for specially-abled children. However, the initial years were met with several hurdles. There was limited awareness about the importance of specialized therapy and education for children with disabilities        </p>
+        <p>
+          Over the years, Umeed Kiran has impacted hundreds of lives. Children who once struggled to communicate have now found their voice through speech therapy. Others, who faced mobility challenges, have gained independence with the help of physiotherapy. The organization has provided not only medical and therapeutic support but also emotional and psychological encouragement to both the children and their families. From participating in cultural programs to excelling in academic and vocational training, these children have showcased their immense potential, proving that disabilities do not define their capabilities.
+
+        </p>
+      </>
+    ),
+
+
+
+  },
+
+
 ]
 
 export async function getBlogPosts() {
