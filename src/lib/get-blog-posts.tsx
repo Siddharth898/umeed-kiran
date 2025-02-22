@@ -15,7 +15,7 @@ const blogPosts: BlogPost[] = [
     id: "1",
     title: "Empowering Specially Abled Children Through Art",
     excerpt: "Discover how Umeed Kiran is using art therapy to help children express themselves and develop new skills.",
-    imageUrl: "images/blog1.jpg",
+    imageUrl: "/images/blog1.jpg",
     content: (
       <>
         <p>
@@ -42,7 +42,7 @@ const blogPosts: BlogPost[] = [
     title: "Inclusive Education: A Cornerstone of Umeed Kiran",
     excerpt:
       "Learn about our approach to inclusive education and how it's making a difference in the lives of specially abled children.",
-    imageUrl: "images/blog2.jpeg",
+    imageUrl: "/images/blog2.jpeg",
     content: (
       <>
         <p>
@@ -69,7 +69,7 @@ const blogPosts: BlogPost[] = [
     title: "Physical Therapy: Enhancing Mobility and Independence",
     excerpt:
       "Explore how our physical therapy programs are helping children overcome physical challenges and gain Confidence.",
-    imageUrl: "images/blog3.jpg",
+    imageUrl: "/images/blog3.jpg",
     content: (
       <>
         <p>
@@ -83,7 +83,7 @@ const blogPosts: BlogPost[] = [
           the therapy sessions engaging and enjoyable for the children.
         </p>
         <p>
-          The progress we\'ve seen in our physical therapy programs has been nothing short of remarkable. From taking
+          The progress we 've seen in our physical therapy programs has been nothing short of remarkable. From taking
           their first steps to mastering fine motor skills, the children at Umid Kiran continue to surpass expectations
           and reach new milestones. Our physical therapy program is not just about physical improvement; it\'s about
           empowering children to explore their world with confidence and joy.
@@ -96,7 +96,7 @@ const blogPosts: BlogPost[] = [
     id: "4",
     title: "Physiotherapy & Speech Therapy: Enhancing Mobility & Communication",
     excerpt: "For many specially abled children, the ability to move freely and communicate effectively does not come naturally",
-    imageUrl: "images/blog4.jpg",
+    imageUrl: "/images/blog4.jpg",
     content: (
       <>
         <p>
@@ -121,7 +121,7 @@ const blogPosts: BlogPost[] = [
     id: "5",
     title: "Art & Music Therapy: A Creative Path to Healing",
     excerpt: "Art and music have long been celebrated for their therapeutic properties, offering a powerful means of communication and self-expression",
-    imageUrl: "images/blog5.jpg",
+    imageUrl: "/images/blog5.jpg",
     content: (
       <>
         <p>
@@ -140,7 +140,7 @@ const blogPosts: BlogPost[] = [
     id: "6",
     title: "The Journey of Umeed Kiran: A Decade of Empowerment",
     excerpt: "For the past ten years, Umeed Kiran has been a beacon of hope for specially-abled children, providing them with the tools, resources, and care necessary for their growth and development",
-    imageUrl: "images/blog6.jpg",
+    imageUrl: "/images/blog6.jpg",
     content: (
       <>
         <p>
