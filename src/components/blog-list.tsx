@@ -1,37 +1,64 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 type BlogPost = {
-  id: string;
   title: string;
-  excerpt: string;
-  imageUrl?: string; // Made optional for better fallback handling
+  content: string;
+  imageUrl?: string;
+  id: string;
 };
 
-export default function BlogList({ posts }: { posts: BlogPost[] }) {
+interface BlogListProps {
+  posts: BlogPost[];
+  currentPage: number;
+  hasMore: boolean;
+}
+
+export default function BlogList({ posts, currentPage, hasMore }: BlogListProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {posts.map((post) => (
-        <Link href={`/blog/${post.id}`} key={post.id} className="block">
-          <article className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-            <div className="relative w-full h-48">
+    <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((post) => (
+          <div key={post['$id']} className="bg-white p-4 rounded-lg shadow-md">
+            {/* Blog Image */}
+            {post.imageUrl && (
               <Image
-                src={post.imageUrl ? post.imageUrl : "/images/placeholder.svg"}
-                alt={post.title || "Blog post image"}
-                fill
-                className="object-cover"
-                priority={post.id === "1"} // Load the first image with priority
+                src={post.imageUrl}
+                alt={post.title}
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover rounded-md"
               />
-            </div>
-            <div className="p-4">
-              <h2 className="text-xl font-semibold text-sky-800 mb-2">
-                {post.title}
-              </h2>
-              <p className="text-gray-600">{post.excerpt}</p>
-            </div>
-          </article>
-        </Link>
-      ))}
+            )}
+
+            {/* Blog Title */}
+            <h2 className="text-xl font-bold mt-4">{post.title}</h2>
+
+            {/* Blog Excerpt */}
+            <p className="text-gray-700">{post.content.substring(0, 100)}...</p>
+
+            {/* Read More Link */}
+            <Link href={`/blog/${post['$id']}`} className="text-blue-600 hover:underline">
+              Read more
+            </Link>
+          </div>
+        ))}
+      </div>
+
+      {/* Pagination Controls */}
+      <div className="flex justify-center mt-8 space-x-4">
+        {currentPage > 1 && (
+          <Link href={`?page=${currentPage - 1}`} className="px-4 py-2 bg-blue-500 text-white rounded">
+            Previous
+          </Link>
+        )}
+        {hasMore && (
+          <Link href={`?page=${currentPage + 1}`} className="px-4 py-2 bg-blue-500 text-white rounded">
+            Next
+          </Link>
+        )}
+      </div>
     </div>
   );
 }
