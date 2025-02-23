@@ -6,7 +6,7 @@ type BlogPost = {
   title: string;
   content: string;
   imageUrl?: string;
-  id: string;
+  $id: string;
 };
 
 interface BlogListProps {
